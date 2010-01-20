@@ -1,0 +1,48 @@
+TOPIC
+
+    Special Directories
+
+SHORT DESCRIPTION
+
+    Special Directories  are a  way to  quickly navigate  to important
+    parts of the namespace.
+
+LONG DESCRIPTION
+
+    Special Directories are a set of directories, each  of which has a
+    function that will navigate you to the appropriate directory using
+    the push-location  cmdlet. For example,  the function "home" might
+    navigate to "c:\users\bdewey."
+
+USING SPECIAL DIRECTORIES
+
+    The   Get-SpecialDirectories  cmdlet  will  return   the  list  of
+    currently active special directories. For example:
+
+        C:\users\bdewey\Powershell> Get-SpecialDirectories
+
+        Name                           Value
+        ----                           -----
+        tools                          E:\tools
+        temp                           C:\Users\bdewey\AppData\Local\Temp
+        wn                             e:\tools\OneNoteWebAsService
+        home                           c:\users\bdewey
+
+    The Name property is  the name of  the function that will navigate
+    you to the directory; the Value property is the directory that you
+    will navigate to.
+
+    New-SpecialDirectory  will   create   a new   special   directory.
+    Remove-SpecialDirectory   will    remove  a    special  directory.
+    Update-SpecialDirectories will ensure  that  all of the  functions
+    that map to special directories are defined.
+
+SEE ALSO
+
+    Get-SpecialDirectories
+    Update-SpecialDirectories
+    New-SpecialDirectory
+    Remove-SpecialDirectory
+    Invoke-SpecialDirectories
+
+    

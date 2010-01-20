@@ -50,7 +50,7 @@ navigate to.
 - Update-SpecialDirectories will ensure that all of the functions that
   map to special directories are defined.
 
-* History                                              :NOEXPORT:
+* History                                              :noexport:
 
 - 2010-01-19 (1.1.0)
 
